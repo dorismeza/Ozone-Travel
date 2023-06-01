@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header*/
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/playa.jpg');
+  background-position: bottom;
+  color: transparent;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: rgb(55, 29, 29);
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: rgb(218, 47, 47);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: rgb(218, 47, 47);
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+/*body*/
+
+body,
+html {
+  overflow-x: hidden;
+  background: whitesmoke;
+}
+
+/*Eventos*/
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #542614;
+}
+
+.descripcion {
+  text-align: left;
+  margin: 40px 10px 10px 10px;
+  font-size: 3vmin;
+}
+
+.roww {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+}
+
+.roww .coll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events .roww {
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 3vmin;
+  color: rgb(78, 78, 78);
+  margin: 20px auto;
+}
+
+p {
+  color: rgb(78, 78, 78);
+  padding: 0px 40px;
+}
+
+.events .ctn {
+  margin-top: 30px;
+}
+
+/*Seccion Promociones*/
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/hotel.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-content {
+  width: 60%;
+ padding: 50px;
+ color: whitesmoke;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+
+.explore-content h1{
+  font-size: 7vmin;
+}
+
+.explore-content .line{
+  margin-bottom: 50px;
+}
+
+.explore-content p{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.explore-content .ctn{
+  margin-top: 40px;
+}
+
+/*Seccion de Destinos*/
+.content-col{
+  width:40% ;
+}
+
+.image-col{
+  width: 60%;
+}
+
+.destinos .roww .coll{
+  width: 50%;
+  display: flex;
+}
+
+.destinos .image-gallery{
+  display: grid;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.image-gallery img{
+  max-width:400px ;
+  margin: 10px;
+  height: auto;
+  display: flex;
+}
+
+.content-col h1{
+  font-size: 7vmin;
+  color:rgb(78, 78, 78) ;
+}
+
+.content-col .line{
+  margin-left:-1px ;
+}
+
+.content-col p{
+  padding: 0;
+  margin:30px auto ;
+}
+
+.content-col .ctn{
+  margin-left:-100px ;
+}
+
+/*responsive image-gallery*/
+
+@media (max-width: 768px) {
+  .destinos .image-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+/*animacion de imagenes*/
+
+ .coll img {
+  width: 90%;
+  display: flex;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+  /* Separación vertical entre las imágenes */
+  margin-right: 10px;
+}
+
+ .coll:last-child img {
+  margin-right: 0;
+  /* Eliminar el margen derecho de la última imagen de cada fila */
+}
+
+.coll img:hover {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+
+/*animacion de texto*/
+.title h1 {
+  position: relative;
+  animation-name: colorChange;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #03b2f7;
+    /* Color inicial */
+  }
+
+  50% {
+    color: #08aa05;
+    /* Color intermedio */
+  }
+
+  100% {
+    color: #039ef7;
+    /* Color final */
+  }
+}
+
+/*Scroll de imagenes*/
+.scrollable {
+  overflow-x: auto;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scrollable::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+ .coll {
+  margin-right: 20px;
+  /* Espacio entre elementos */
+}
+
+ .coll:last-child {
+  margin-right: 0;
+  /* Eliminar margen derecho del último elemento */
+}
+
+.scroll-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f7035c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-control.left {
+  left: 10px;
+}
+
+.scroll-control.right {
+  right: 10px;
+}

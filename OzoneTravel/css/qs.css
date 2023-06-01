@@ -1,0 +1,109 @@
+.quienes-somos {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .quienes-somos .contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .quienes-somos .imagen {
+    flex: 1;
+  }
+  
+  .quienes-somos .imagen img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .quienes-somos .texto {
+    flex: 1;
+    margin: 0 40px;
+    text-align: left;
+  }
+  
+  .quienes-somos .texto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .quienes-somos .texto p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+
+  @media (max-width: 768px) {
+    .quienes-somos .contenido {
+      flex-direction: column;
+    }
+    
+    .quienes-somos .texto{
+      margin: 20px 0;
+    }
+  }
+  
+  .mision-vision {
+    background-color: gray;
+    padding: 50px 0;
+  }
+  
+  .mision-vision .contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mision-vision .contenido > div {
+    flex: 1 1 50%;
+    padding: 20px;
+  }
+  
+  .mision-vision .contenido h2 {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .mision-vision .contenido p {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .mision-vision .contenido > div {
+      flex: 1 1 100%;
+    }
+  }
+  
+  .pag-face {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  .pag-face .previsualizacion-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pag-face .previsualizacion-facebook iframe {
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .pag-face .previsualizacion-facebook {
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+  

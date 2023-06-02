@@ -38,3 +38,24 @@ html {
   align-items: center;
 }
 
+/*botones*/
+a {
+  text-decoration: none;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: rgb(218, 47, 47);
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+.espacio {
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  overflow: hidden;
+  margin: 40px 20px;
+}
+
+

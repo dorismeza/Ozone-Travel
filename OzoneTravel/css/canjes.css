@@ -1,0 +1,23 @@
+.contenedor {
+  margin: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.paragraphs {
+ align-items: center;
+ text-align: center;
+}
+
+.paragraphs .paragraph {
+  margin-bottom: 20px;
+}
+
+body{
+  margin-top: 10%;
+}

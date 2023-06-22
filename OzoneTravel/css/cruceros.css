@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Contenedor principal */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Contenido */
+  .content {
+    text-align: center;
+    padding: 20px;
+    text-align: justify;
+    background-color: gray;
+    max-width: 100%;
+width: 100%;
+  }
+  
+  h2 {
+    color: #ffff;
+    font-size: 36px;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  /* Botón de cotización */
+  .cotiza-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cotiza-button:hover {
+    background-color: #d47d00;
+  }
+  
+  /* Imagen de fondo */
+  .fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .fondo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Información adicional */
+  .info {
+    text-align: center;
+    padding: 20px;
+    color: #000;
+  }
+  
+  .info a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .info a:hover {
+    color: #ff9900;
+  }
+  .info p{
+    color: #000;
+  }

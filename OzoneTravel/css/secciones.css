@@ -5,27 +5,35 @@
   padding: 0;
   box-sizing: border-box;
 }
-nav{
+
+nav {
   background: black;
   color: white;
 }
 
 header.secciones {
-    margin: 20px;
-  }
-  
-  header.secciones div {
-    margin: 10px;
-    padding: 10px;
-    background-color: #f8f8f8;
-    background-color: transparent;
-  }
+  margin: 20px;
+}
 
-  body,
-html {
+header.secciones div {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  background-color: transparent;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   margin-top: auto;
   overflow-x: hidden;
   background: whitesmoke;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .roww {
@@ -62,5 +70,3 @@ a {
   overflow: hidden;
   margin: 40px 20px;
 }
-
-

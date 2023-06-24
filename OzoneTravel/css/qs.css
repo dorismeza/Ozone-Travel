@@ -1,109 +1,118 @@
-.quienes-somos {
-    background-color: #f7f7f7;
-    padding: 50px 0;
-  }
-  
-  .quienes-somos .contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .quienes-somos .imagen {
-    flex: 1;
-  }
-  
-  .quienes-somos .imagen img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .quienes-somos .texto {
-    flex: 1;
-    margin: 0 40px;
-    text-align: left;
-  }
-  
-  .quienes-somos .texto h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .quienes-somos .texto p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
+main {
+  padding: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
 
-  @media (max-width: 768px) {
-    .quienes-somos .contenido {
-      flex-direction: column;
-    }
-    
-    .quienes-somos .texto{
-      margin: 20px 0;
-    }
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagen {
+  flex: 0 0 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.imagen img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.texto {
+  flex: 1 1 auto;
+  max-width: 400px;
+}
+
+.previsualizacion-facebook {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.mision-vision {
+  background-color: gray;
+  padding: 50px 0;
+}
+
+.mision-vision .contenido1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mision-vision .contenido1 > div {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+.mision-vision .contenido1 h2 {
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mision-vision .contenido1 p {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 768px) {
+  .mision-vision .contenido1 > div {
+    flex: 1 1 100%;
   }
-  
-  .mision-vision {
-    background-color: gray;
-    padding: 50px 0;
+  .imagen {
+    flex: 0 0 40%;
+    max-width: none;
+    margin-right: 40px;
+    margin-bottom: 0;
   }
-  
-  .mision-vision .contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .mision-vision .contenido > div {
+
+  .texto {
     flex: 1 1 50%;
-    padding: 20px;
+    max-width: none;
   }
-  
-  .mision-vision .contenido h2 {
-    font-size: 28px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 20px;
+
+  .previsualizacion-facebook {
+    flex: 0 0 50%;
+    max-width: none;
   }
-  
-  .mision-vision .contenido p {
-    font-size: 18px;
-    color: #ffffff;
-    text-align: justify;
+  main{
+    margin-top: 15%;
   }
-  
-  @media (max-width: 768px) {
-    .mision-vision .contenido > div {
-      flex: 1 1 100%;
-    }
+  .imagen img {
+    width: 100%;
+    border-radius: 50%;
   }
-  
-  .pag-face {
-    background-color: #ffffff;
-    padding: 50px 0;
-  }
-  
-  .pag-face .previsualizacion-facebook {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .pag-face .previsualizacion-facebook iframe {
-    border-radius: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .pag-face .previsualizacion-facebook {
-      width: 100%;
-      overflow-x: auto;
-    }
-  }
-  
+}

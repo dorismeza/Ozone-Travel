@@ -1,160 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Estilos para el contenido principal */
+main {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Estilos para la sección de héroe */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-  }
-  
-  .hero-content {
-    flex-basis: 50%;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .hero-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .hero-text {
-    font-size: 18px;
-    color: #333;
-    margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
 
-  }
-    
-  .hero-image {
-    flex-basis: 50%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .hero-content,
-    .hero-image {
-      flex-basis: 100%;
-      padding: 10px;
-    }
-    
-    .hero-image {
-      margin-top: 0;
-    }
-  }
+.encabezado h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
-  /*archivo*/
-  .archivo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-  }
+.hero-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
-  .pdf-container {
-    width: 80%;
-    height: 80%;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-  }
+/* Estilos para la sección de archivo PDF */
+.archivo {
+  padding: 40px;
+  text-align: center;
+}
 
-  .flipbook {
-    width: 100%;
-    height: 100%;
-  }
+.hero-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-  .flipbook iframe {
-    width: 100%;
-    height: 100%;
-  }
+.flipbook {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  @media (max-width: 768px) {
-    .pdf-container {
-      width: 90%;
-      height: 70%;
-    }
-  }
+iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
 
-  @media (max-width: 576px) {
-    .pdf-container {
-      width: 95%;
-      height: 60%;
-    }
-  }
+/* Estilos para la sección de nota */
+.nota {
 
-  /*Nota aclaratoria*/
-  .nota {
-    background-color: #4f4b4b;
-    padding: 50px 0;
-    margin-bottom: 0px;
-  }
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
 
-  .nota .contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .nota .imagen {
-    flex: 1;
-    width: 100%;
-  }
-  
-  .nota .imagen img {
-    max-width:100%;
-    border-radius: 10px;
-  }
-  
-  .nota .texto {
-    flex: 1;
-    margin: 0 10px;
-    text-align: left;
-    color: white;
-  }
-  
-  .nota .texto p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
+.imagen {
+  flex: 1 1 300px;
+  margin-right: 20px;
+}
 
-  @media (max-width: 768px) {
-    .nota .contenido {
-      flex-direction: column;
-    }
-    
-    .nota .texto{
-      margin: 20px 0;
-    }
-  }
+.imagen img {
+  width: 100%;
+  height: auto;
+}
 
-  .parrafo{
-    flex-basis: 50%;
-    text-align: justify;
-    padding: 10px;
-  }
+.nota p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 
-  pre{
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    line-height: inherit;
-    white-space: pre-wrap;
-    margin: 0;
-    padding: 10px;
-  }
+/* Estilos para la sección de párrafo */
+.parrafo {
+  padding: 40px;
+  text-align: center;
+}
+
+.parrafo-text p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.alert{
+  width: 100%;
+  background-color:#FCDE5B;
+  align-items: center;
+}
+.alert-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.alert-heading {
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+  margin: 0;
+}
+.icon-black {
+  color: #666;
+}

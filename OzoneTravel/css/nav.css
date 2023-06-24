@@ -1,6 +1,6 @@
 .navbar {
-    background: black;
-    padding: 20px; /* Aumentar tamaño del header */
+    background-color: black;
+    padding: 0%; /* Aumentar tamaño del header */
     position: fixed;
     top: 0;
     left: 0;
@@ -31,4 +31,11 @@
     color: #fcde5b; /* Color de enlace activo */
     background-color: rgba(255, 255, 255, 0.1); /* Fondo del enlace activo */
     outline: none; /* Quitar el contorno predeterminado */
+  }
+
+  main {
+    padding-top: 100px; /* Altura del encabezado, ajusta según sea necesario */
+    box-sizing: border-box;
+   
+    width: 100%;
   }

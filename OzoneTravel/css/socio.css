@@ -12,7 +12,7 @@
   }
 
   .columna img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 10%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@
   }
 
   button {
-    background-color: rgb(218, 47, 47);
+    background-color: #ff9900;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -91,7 +91,7 @@
   }
 
   .formulario-content button {
-    background-color: rgb(218, 47, 47);
+    background-color: #ff9900;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -107,7 +107,7 @@
 
   /* Estilos para el botón de cerrar */
   #cerrarFormulario {
-    background-color: rgb(218, 47, 47);
+    background-color: #ff9900;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -125,27 +125,71 @@
     background-color: rgb(218, 47, 47);
   }
 
-  /*Socio*/
-
   .sociedad {
-    position: relative;
-    background-color: #f2f2f2;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
-  
+
+  .sociedad p {
+    margin: 0;
+  }
+
   .animacion {
-    width: 100px;
-    height: 100px;
-    color: rgb(218, 47, 47);
-    font-size: 50px;
-    animation: cambiarColor 3s ease-in-out infinite;
+    position: relative;
+    animation: handshake 2s infinite, cambiarColor 3s ease-in-out infinite;
+  }
+
+  @keyframes handshake {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    75% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .sociedad {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .animacion {
+      margin: 10px 0;
+    }
+    .animacion i{width: 40; height: auto;}
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .columna {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   .animacion i{
-      width: 500px;
+      width: 40px;
       height:auto ;
   }
   
@@ -160,5 +204,4 @@
         color: #039ef7;
       }
   }
-  
   

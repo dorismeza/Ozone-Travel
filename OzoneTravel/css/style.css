@@ -80,8 +80,8 @@ section {
 
 .descripcion {
   text-align: left;
-  margin: 40px 10px 10px 10px;
   font-size: 3vmin;
+  margin-top: 20px;
 }
 
 .roww {
@@ -100,7 +100,7 @@ section {
 }
 
 .events .roww {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -307,4 +307,35 @@ p {
 
 .scroll-control.right {
   right: 10px;
+}
+
+.scrollable .roww .coll img{
+  width: 500px;
+  display: flex;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .scrollable {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .coll {
+    margin-right: 10px;
+    /* Espacio entre elementos en pantallas pequeñas */
+  }
+  .scrollable .roww .coll img{
+    width: 300px;
+    height: auto;
+  }
+  
+  .scroll-control {
+    display: none;
+  }
+}
+
+.coll p{
+padding-left:10px ;
+padding-right: 10px;
 }

@@ -1,6 +1,3 @@
-main {
-  margin-top: 8%;
-}
 
 .slogan {
   text-align: center;
@@ -102,7 +99,5 @@ h2 {
   .destination {
     width: 100%;
   }
-  .title {
-    margin-top: 20%;
-  }
+
 }

@@ -18,7 +18,7 @@ body {
   padding: 20px;
   text-align: justify;
   background-color: gray;
-  max-width: 940px;
+  max-width: 100%;
 }
 
 h2 {

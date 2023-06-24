@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-nav {
-  background: black;
-  color: white;
-}
-
 header.secciones {
   margin: 20px;
 }

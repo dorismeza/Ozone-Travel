@@ -1,0 +1,108 @@
+main {
+  margin-top: 8%;
+}
+
+.slogan {
+  text-align: center;
+
+}
+
+.title {
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos del título principal */
+h1 {
+  font-size: 36px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Estilos del subtítulo */
+h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Estilos de la sección de destinos */
+#destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  background-image: url('../img/cielo.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* Estilos de cada destino */
+.destination {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px;
+  text-align: center;
+  animation: fade-in 1s ease;
+}
+
+/* Estilos de la imagen del destino */
+.destination img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  animation: zoom-in 1s ease;
+}
+
+/* Estilos del nombre del destino */
+.destination h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Animación de entrada */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de zoom */
+@keyframes zoom-in {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Estilos responsivos */
+@media screen and (min-width: 580px) and (max-width: 1000px) {
+  #destinations {
+    justify-content: flex-start;
+  }
+
+  .destination {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 780px) {
+  .destination {
+    width: 100%;
+  }
+  .title {
+    margin-top: 20%;
+  }
+}

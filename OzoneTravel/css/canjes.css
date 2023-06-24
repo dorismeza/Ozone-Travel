@@ -5,8 +5,9 @@
 .logo {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
+  border-radius: 10%;
 }
 
 .paragraphs {
@@ -20,4 +21,16 @@
 
 body{
   margin-top: 10%;
+}
+
+.titulo{
+padding-top: 5%;
+}
+
+.line {
+  width: 50%;
+  height: 4px;
+  background: rgb(218, 47, 47);
+  margin: 10px auto;
+  border-radius: 5px;
 }

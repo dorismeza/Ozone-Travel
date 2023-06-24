@@ -1,0 +1,34 @@
+.navbar {
+    background: black;
+    padding: 20px; /* Aumentar tamaño del header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+  }
+
+  .navbar-brand img {
+    width: 80px; /* Aumentar tamaño de la imagen */
+    height: 80px;
+    border-radius: 50%; /* Imagen redondeada */
+    margin-right: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    color: white;
+    margin-left: 15px;
+  }
+
+  .navbar-nav .nav-link:focus {
+    color: #fcde5b; /* Color de enlace activo */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo del enlace activo */
+    outline: none; /* Quitar el contorno predeterminado */
+  }

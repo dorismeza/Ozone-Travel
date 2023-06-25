@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.section {
+    padding: 50px;
+}
+h2 {
+    text-align: center;
+}
+
+/* Estilos para la sección de imágenes con información */
+.info-image-section {
+    background-color: #f4f4f4;
+}
+.info-image-section h3 {
+    text-align: center;
+}
+.info-image-section .info-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.info-image-section .info-image .item {
+    width: 300px;
+    text-align: center;
+}
+.info-image-section .info-image .item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para videos */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .video-item {
+    margin: 10px;
+    flex: 1 0 300px; /* Define el tamaño de cada video */
+    max-width: 100%; /* Para asegurarse de que no exceda el ancho del contenedor */
+  }
+  
+  .video-item iframe {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  /* Estilos adicionales para hacerlo responsivo */
+  @media only screen and (max-width: 768px) {
+    .video-item {
+      flex-basis: 100%; /* En pantallas pequeñas, ocupa todo el ancho */
+    }
+  }
+
+/* Estilos adicionales para hacerlo responsive */
+@media screen and (max-width: 768px) {
+    .video-container {
+        width: 100%;
+    }
+}
+
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+    .info-image-section .info-image .item {
+        width: 100%;
+    }
+    .video-carousel-section .video-carousel-container .item {
+        width: 100%;
+    }
+    .quote-section form input,
+    .quote-section form textarea {
+        width: 100%;
+    }
+}

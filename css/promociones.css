@@ -1,0 +1,76 @@
+.promotions-section {
+    text-align: center;
+    background-image: url('../img/fondo-promo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .promotions-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .promotion-card {
+    width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promotion-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .promotion-details {
+    padding: 15px;
+  }
+  
+  .promotion-details h3 {
+    margin-top: 0;
+  }
+  
+  .promotion-details p {
+    color: #666;
+  }
+  .promotion-details ul {
+    list-style-type: none;
+    padding-left: 20px;
+
+  }
+  
+  .promotion-details ul li {
+    position: relative;
+
+  }
+  
+  .promotion-details ul li::before {
+    content: "\2713"; /* Código unicode para el checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  

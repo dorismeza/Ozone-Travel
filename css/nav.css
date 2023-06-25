@@ -34,8 +34,7 @@
   }
 
   main {
-    padding-top: 100px; /* Altura del encabezado, ajusta según sea necesario */
+    padding-top: 90px; /* Altura del encabezado, ajusta según sea necesario */
     box-sizing: border-box;
-   
     width: 100%;
   }

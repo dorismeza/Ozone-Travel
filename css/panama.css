@@ -1,0 +1,62 @@
+
+  header {
+    background-color: #333;
+  }
+  
+  .header-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header-container h1 {
+    text-align: center;
+    margin: 0;
+  }
+
+/* Estilos CSS para la página */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+    
+  main {
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .tab:hover {
+    background-color: #ccc;
+  }
+  
+  .tab.active {
+    background-color: #ccc;
+  }
+  
+  .content {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .content.active {
+    display: block;
+  }
+  

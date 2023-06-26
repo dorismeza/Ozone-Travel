@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manurii</title>
+    <title>Excursion Panamá</title>
     <!-- Enlaces-->
     <!-- Estilos de Slick Carousel -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -13,10 +13,12 @@
     <link rel="stylesheet" type="text/css" href="tu-archivo-de-estilos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/nav.css">
+        <script src="../js/pestañas.js"></script>
+        <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/secciones.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/hoteles.css">
+    <link rel="stylesheet" href="../css/panama.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
@@ -45,7 +47,8 @@
                                 <li><a class="dropdown-item" href="paquetes-locales.html">Paquetes locales</a></li>
                                 <li><a class="dropdown-item" href="paquetes-lujo.html">Paquetes locales de lujo</a></li>
                                 <li><a class="dropdown-item" href="tours.html">Tours de un día</a></li>
-                                <li><a class="dropdown-item" href="excursiones-terrestres.html">Excursiones terrestres</a></li>
+                                <li><a class="dropdown-item" href="excursiones-terrestres.html">Excursiones
+                                        terrestres</a></li>
                                 <li><a class="dropdown-item" href="visas.html">Trámite de visas</a></li>
                                 <li><a class="dropdown-item" href="vuelos.html">Vuelos y paquetes internacionales</a>
                                 </li>
@@ -90,72 +93,25 @@
         </nav>
     </header>
     <main>
-        <div class="header-container">
-            <h1>Manurii</h1>
-            <hr>
-            <div class="menu">
-                <a href="#habitaciones">Imagenes | </a>
-                <a href="#tipos">  </a>
-                <a href="#paquetes">Paquetes </a>
-            </div>
+        <div class="">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                  <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+              </div>
         </div>
-
-        <section id="gallery" class="section">
-            <p>El hotel ideal para parejas. Ambiente romántico, habitaciones elegantes y servicios personalizados. ¡Vive momentos inolvidables!</p>
-            <div class="image-gallery">
-                <img src="../img/manuri-galery.jpeg" alt="Manurii 1">
-                <img src="../img/manuri-galery2.jpeg" alt="Manurii 2">
-                <img src="../img/manuri-galery3.jpeg" alt="Manurii 3">
-            </div>
-        </section>
-
-        <section id="paquetes" class="paquete">
-            <h5>En este hotel puedes encontrar paquetes:</h5>
-            <div class="packages">
-                <div class="package ">
-                    <h3>Paquete especial romántico</h3>
-                </div>
-                <div class="package">
-                    <h3>Paquete Básico</h3>
-                </div>
-            </div>
-            <br>
-            <h5 style="color: #666;">*No se aceptan menores de 16 años.</h5>
-        </section>
-        <div class="cotiza-ahora">
-            <h2>Cotiza ahora con uno de nuestros agentes de ventas</h2>
-            <div class="agentes-ventas">
-                <div class="agente">
-                    <a href="https://wa.me/50494848782?text=¡Hola! Estoy interesado(a) en obtener más información sobre los paquetes de Manurii."
-                        target="_blank">
-                        <img src="../img/whatsapp.png" alt="WhatsApp Icon">
-                        <span>Alexa Chávez</span>
-                    </a>
-                </div>
-                <div class="agente">
-                    <a href="https://wa.me/50497250670?text=¡Hola! Estoy interesado(a) en obtener más información sobre los paquetes de Manurii."
-                        target="_blank">
-                        <img src="../img/whatsapp.png" alt="WhatsApp Icon">
-                        <span>Sandra Torres</span>
-                    </a>
-                </div>
-                <div class="agente">
-                    <a href="https://wa.me/50496251890?text=¡Hola! Estoy interesado(a) en obtener más información sobre los paquetes de Manurii."
-                        target="_blank">
-                        <img src="../img/whatsapp.png" alt="WhatsApp Icon">
-                        <span>Mauda Meza</span>
-                    </a>
-                </div>
-                <div class="agente">
-                    <a href="https://wa.me/50492860152?text=¡Hola! Estoy interesado(a) en obtener más información sobre los paquetes de Manurii."
-                        target="_blank">
-                        <img src="../img/whatsapp.png" alt="WhatsApp Icon">
-                        <span>Estela Licona</span>
-                    </a>
-                </div>
-            </div>
         </div>
-    </main>
+      </main>
+      
     <footer>
         <div class="footer-content">
             <p>Ozone Travel | Email: ozonetravelhn@gmail.com </p>
@@ -164,8 +120,8 @@
                 <a href="https://www.facebook.com/ozonetravel01"><i class="fab fa-facebook"></i> Facebook</a>
             </p>
             <p class="social-icons">
-              <a href="https://www.instagram.com/ozonetravelhn/"><i class="fab fa-instagram"></i> Instragram</a>
-          </p>
+                <a href="https://www.instagram.com/ozonetravelhn/"><i class="fab fa-instagram"></i> Instragram</a>
+            </p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -175,7 +131,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick Carousel -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    
 </body>
 
 </html>

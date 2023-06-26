@@ -102,7 +102,7 @@
   }
 
   .formulario-content button:hover {
-    background-color: rgb(218, 47, 47);
+    background-color: #ff9900;
   }
 
   /* Estilos para el botón de cerrar */
@@ -122,7 +122,7 @@
   }
 
   #cerrarFormulario:hover {
-    background-color: rgb(218, 47, 47);
+    background-color: #ff9900;
   }
 
   .sociedad {

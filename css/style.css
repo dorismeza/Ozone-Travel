@@ -12,33 +12,24 @@ a {
   text-decoration: none;
 }
 
-header {
+.header-content {
   width: 100vw;
   height: 100vh;
-  background-image: url('../img/playa.jpg');
+  background-image: url('../img/portada1.png');
   background-position: bottom;
   color: transparent;
   background-size: cover;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-
+  margin-bottom: 0%;
 }
 
-.header-content {
-  margin-bottom: 150px;
-  color: rgb(55, 29, 29);
-  text-align: center;
-}
-
-.header-content h2 {
-  font-size: 4vmin;
-}
 
 .line {
   width: 150px;
   height: 4px;
-  background: rgb(218, 47, 47);
+  background: #ff9900;
   margin: 10px auto;
   border-radius: 5px;
 }
@@ -68,7 +59,7 @@ html {
 /*Eventos*/
 
 section {
-  width: 80%;
+  width: 90%;
   margin: 80px auto;
 }
 
@@ -82,6 +73,7 @@ section {
   text-align: left;
   font-size: 3vmin;
   margin-top: 20px;
+  display: flex;
 }
 
 .roww {
@@ -100,7 +92,8 @@ section {
 }
 
 .events .roww {
-  margin-top: 40px;
+  margin-top: 20px;
+  border: #555;
 }
 
 h4 {
@@ -204,13 +197,6 @@ p {
   margin-left:-100px ;
 }
 
-/*responsive image-gallery*/
-
-@media (max-width: 768px) {
-  .destinos .image-gallery {
-    grid-template-columns: 1fr;
-  }
-}
 /*animacion de imagenes*/
 
  .coll img {
@@ -240,23 +226,6 @@ p {
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-}
-
-@keyframes colorChange {
-  0% {
-    color: #03b2f7;
-    /* Color inicial */
-  }
-
-  50% {
-    color: #08aa05;
-    /* Color intermedio */
-  }
-
-  100% {
-    color: #039ef7;
-    /* Color final */
-  }
 }
 
 /*Scroll de imagenes*/
@@ -314,7 +283,12 @@ p {
   display: flex;
   height: auto;
 }
+.coll p{
+  padding-left:10px ;
+  padding-right: 10px;
+  }
 
+  /*responsive image-gallery*/
 @media (max-width: 768px) {
   .scrollable {
     overflow-x: scroll;
@@ -333,9 +307,41 @@ p {
   .scroll-control {
     display: none;
   }
+  .destinos .image-gallery {
+    grid-template-columns: 1fr;
+  }
+  .header-content {
+    width: 100%;
+    height: 30vh;
+    background-image: url('../img/portada1.png');
+    background-position: bottom;
+    color: transparent;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  .explore-content{
+    width: 100%;
+  }
 }
 
-.coll p{
-padding-left:10px ;
-padding-right: 10px;
+@keyframes colorChange {
+  0% {
+    color: #03b2f7;
+    /* Color inicial */
+  }
+
+  50% {
+    color: #08aa05;
+    /* Color intermedio */
+  }
+
+  100% {
+    color: #039ef7;
+    /* Color final */
+  }
 }
+
+

@@ -4,24 +4,49 @@
     padding: 20px;
   }
   
-  .header-container h1 {
+    .header-container h1 {
     text-align: center;
     margin: 0;
   }
+/*Imagenes*/
 
-  .image-section {
-    text-align: center;
-  }
+.image-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-item {
+  flex-basis: 300px;
+  margin: 10px;
+}
+
+.image-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+  @media (max-width: 768px) {
+    .image-container {
+      flex-direction: column;
+    }
   
-  .image-container {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    .image-container img {
+      margin: 10px auto;
+    }
+    .header-container h1 {
+      font-size:medium;
+    }
   }
   

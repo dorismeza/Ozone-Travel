@@ -4,7 +4,13 @@
     padding: 20px;
   }
   
-  .header-container h1 {
+    .header-container h1 {
     text-align: center;
     margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-container h1 {
+      font-size:medium;
+    }
   }

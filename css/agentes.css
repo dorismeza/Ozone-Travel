@@ -9,7 +9,8 @@
     color: #fff;
     text-align: center;
   }
-  
+
+ 
   .agentes-ventas {
     display: flex;
     justify-content: center;
@@ -37,6 +38,11 @@
     font-weight: bold;
   }
   
+  .agente span {
+    display: block;
+    font-weight: bold;
+  }
+  
   @media (max-width: 768px) {
     .agentes-ventas {
       flex-wrap: wrap;
@@ -44,6 +50,9 @@
   
     .agente {
       flex-basis: 50%;
+    }
+    .cotiza-ahora h2 {
+      font-size: medium;
     }
   }
   

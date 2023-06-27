@@ -1,33 +1,52 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
+
+.image-section {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Estilos para el contenido principal */
-main {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.image-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
-/* Estilos para la sección de héroe */
-.hero {
-  background-color: #333;
-  color: #fff;
-  padding: 40px;
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 300px;
+  height: auto;
+  margin: 0 10px;
+  border: grey solid 1px;
+}
+
+.download-section {
   text-align: center;
 }
 
-.encabezado h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
+.download-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.hero-text {
-  font-size: 18px;
-  margin-bottom: 10px;
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    margin: 10px auto;
+  }
 }
 
 /* Estilos para la sección de archivo PDF */
@@ -51,60 +70,4 @@ iframe {
   width: 100%;
   height: 600px;
   border: none;
-}
-
-/* Estilos para la sección de nota */
-.nota {
-
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  width: 80%;
-}
-
-.imagen {
-  flex: 1 1 300px;
-  margin-right: 20px;
-}
-
-.imagen img {
-  width: 100%;
-  height: auto;
-}
-
-.nota p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* Estilos para la sección de párrafo */
-.parrafo {
-  padding: 40px;
-  text-align: center;
-}
-
-.parrafo-text p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.alert{
-  width: 100%;
-  background-color:#FCDE5B;
-  align-items: center;
-}
-.alert-icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.alert-heading {
-  display: inline-block;
-  vertical-align: middle;
-  color: #666;
-  margin: 0;
-}
-.icon-black {
-  color: #666;
 }

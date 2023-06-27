@@ -9,13 +9,15 @@
   <!-- Enlaces-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/titulo.css">
+    <link rel="stylesheet" href="../css/nav.css">
   <link rel="stylesheet" href="../css/secciones.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/pagos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -77,46 +79,30 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="encabezado">
-        <h1>Información Legal</h1>
+    <div class="header-container">
+      <h1>Pagos en línea o Bancarios</h1>
+  </div>
+  <section class="image-section">
+    <div class="image-container">
+      <img src="../img/informacion-legal.jpg" alt="Imagen 1">
+      <img src="../img/puntos-ficosa.jpg" alt="Imagen 2">
+      <img src="../img/puntos-ttengo.jpeg" alt="Imagen 3">
+    </div>
+  </section>
+  <section class="archivo">
+    <div class="pdf-container">
+      <h1 class="hero-title">Términos y condiciones sobre los pagos</h1>
+      <div class="flipbook">
+        <iframe src="/archivos/Términos y condiciones.pdf"></iframe>
       </div>
-      <div class="hero-content">
-        <p class="hero-text">Ozone Tours HN - Agencia de viajes es una empresa legalmente constituida como comerciante
-          individual por parte de Marilyn Gabriela Barbosa Castro con RTN: 08011990036249 cuyo representante legal es
-          Carlos Alfonso Andrade Castro con número de identidad: 0801198914412</p>
-        <p class="hero-text">Registro mercantil: 2585075</p>
-        <p class="hero-text">INSC 58179</p>
-        <p class="hero-text">Registro en la cámara de comercio: 19250</p>
-      </div>
-    </section>
-    <section class="archivo">
-      <div class="pdf-container">
-        <h1 class="hero-title">Información para Pagos</h1>
-        <div class="flipbook">
-          <iframe src="/archivos/INFORMACION-PARA-PAGOS.pdf"></iframe>
-        </div>
-      </div>
-    </section>
-    <section class="nota">
-          <div class="alert alert-warning" role="alert">
-            <a href="#"><i class="fas fa-exclamation-triangle icon-black"></i></a>
-            <h4 class="alert-heading">Nota Aclaratoria</h4>
-            <hr>
-            <p>Ningún empleado o persona ajena a la empresa está autorizado(a) a darle ningún otro método de pago que no
-              sea los anteriormente señalados.</p>
-            <p>Si alguna persona le ha mandado otro método de pago distinto al ya señalado, repórtele inmediatamente al
-              número de teléfono: +50494432544</p>
-          </div>         
-    </section>
-    <section class="parrafo">
-      <div class="contenido">
-        <div class="parrafo-text">
-          <h1 class="hero-title">Términos y condiciones</h1>
-          <p>Aquí van los párrafos de información</p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
+
+  <section class="download-section">
+    <h2>Descargar Archivo</h2>
+    <a href="../archivos/Términos y condiciones.pdf" download class="download-button"><i class="fas fa-download"></i> Descargar</a>
+  </section>
+  <br>
   </main>
   
   <footer>
@@ -135,24 +121,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $('.flipbook').turn({
-        width: '100%',
-        height: '100%',
-        autoCenter: true,
-        display: 'double',
-        acceleration: true,
-        gradients: true,
-        elevation: 50,
-        when: {
-          turned: function (e, page) {
-            console.log('Página actual: ' + page);
-          }
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>

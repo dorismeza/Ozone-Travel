@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="../css/titulo.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/correo.js"></script> <!-- Ruta hacia el archivo script.js -->
 </head>
 
 <body>
@@ -114,12 +116,15 @@
         <div class="quote-section">
             <div class="section">
                 <h3>Cotiza aquí</h3>
-                 <form action="https://formsubmit.co/dfulano058@gmail.com" method="POST">
+                 <form id="contact-form" action="https://formsubmit.co/dfulano058@gmail.com" method="POST">
                     <input name="nombre" type="text" placeholder="Nombre" required>
                     <input name="correo" type="email" placeholder="Correo electrónico" required>
                     <textarea name="mensaje" placeholder="Mensaje" required></textarea>
                     <button type="submit">Enviar</button>
-                </form>
+                 <input type="hidden" name="_next" value="http://ozonetravelhn.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+        </form>
             </div>
         </div>
         <div class="cotiza-ahora">
